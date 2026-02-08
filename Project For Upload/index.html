@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Day Finder</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calendar-alt"></i> Calendar Day Finder</h1>
+            <p>Enter any date to find out which day of the week it falls on</p>
+        </header>
+        
+        <div class="content">
+            <div class="input-section">
+                <h2>Enter Date</h2>
+                <p style="margin-top: 10px; margin-bottom: 25px; color: #666;">Fill in the date details below and discover the corresponding day of the week.</p>
+                
+                <div class="date-input-group">
+                    <label for="day"><i class="fas fa-calendar-day"></i> Day</label>
+                    <input type="number" id="day" class="date-input" placeholder="Enter day (1-31)" min="1" max="31">
+                    <span class="input-hint">Enter a valid day (1 to 31 depending on month)</span>
+                </div>
+                
+                <div class="date-input-group">
+                    <label for="month"><i class="fas fa-calendar-week"></i> Month</label>
+                    <input type="number" id="month" class="date-input" placeholder="Enter month (1-12)" min="1" max="12">
+                    <span class="input-hint">Enter a valid month (1 for January to 12 for December)</span>
+                </div>
+                
+                <div class="date-input-group">
+                    <label for="year"><i class="fas fa-calendar-year"></i> Year</label>
+                    <input type="number" id="year" class="date-input" placeholder="Enter year (e.g., 2023)" min="100" max="9999">
+                    <span class="input-hint">Enter a valid year (100 to 9999)</span>
+                </div>
+                
+                <button id="findDayBtn" class="btn">
+                    <i class="fas fa-search"></i> Find Day of the Week
+                </button>
+                
+                <button id="todayBtn" class="btn today-btn">
+                    <i class="fas fa-clock"></i> Use Today's Date
+                </button>
+            </div>
+            
+            <div class="result-section">
+                <div class="calendar-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                
+                <div class="result-card">
+                    <div class="date-display" id="formattedDate">Select a date</div>
+                    <div class="day-display" id="dayResult">--</div>
+                    <div class="day-info" id="dayInfo">The day of the week will appear here</div>
+                </div>
+                
+                <div class="history-section">
+                    <div class="history-title">Recent Searches</div>
+                    <ul class="history-list" id="historyList">
+                        <!-- History items will be added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Calendar Day Finder &copy; 2026 | Devloped By Ritik Kumar Mandal & Uses of HTML, CSS, JS.</p>
+        </footer>
+    </div>
+
+    <script src="index.js">
+       
+    </script>
+</body>
+</html>

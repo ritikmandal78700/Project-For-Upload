@@ -1,0 +1,275 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 450px;
+        }
+        
+        .input-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+        
+        .result-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .date-input-group {
+            margin-bottom: 25px;
+        }
+        
+        .date-input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+            font-size: 1.1rem;
+        }
+        
+        .date-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .date-input:focus {
+            border-color: #6a11cb;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.2);
+        }
+        
+        .input-hint {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            display: block;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(to right, #3a1c71, #6a11cb);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, #6a11cb, #3a1c71);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn i {
+            margin-right: 10px;
+        }
+        
+        .today-btn {
+            background: linear-gradient(to right, #d76d77, #ffaf7b);
+            margin-top: 15px;
+        }
+        
+        .today-btn:hover {
+            background: linear-gradient(to right, #ffaf7b, #d76d77);
+        }
+        
+        .result-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+        
+        .date-display {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #3a1c71;
+            margin-bottom: 10px;
+        }
+        
+        .day-display {
+            font-size: 4.5rem;
+            font-weight: 800;
+            color: #6a11cb;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .day-info {
+            font-size: 1.3rem;
+            color: #555;
+            margin-top: 10px;
+        }
+        
+        .calendar-icon {
+            font-size: 5rem;
+            color: #d76d77;
+            margin-bottom: 20px;
+        }
+        
+        .history-section {
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .history-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 15px;
+            text-align: left;
+            width: 100%;
+        }
+        
+        .history-list {
+            list-style: none;
+            width: 100%;
+            max-height: 150px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        .history-item {
+            background-color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #6a11cb;
+        }
+        
+        .history-date {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .history-day {
+            color: #6a11cb;
+            font-weight: 600;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .input-section, .result-section {
+                min-width: 100%;
+            }
+            
+            .date-display {
+                font-size: 1.8rem;
+            }
+            
+            .day-display {
+                font-size: 3.5rem;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .date-display {
+                font-size: 1.5rem;
+            }
+            
+            .day-display {
+                font-size: 2.8rem;
+            }
+            
+            .input-section, .result-section {
+                padding: 20px;
+            }
+            
+            header {
+                padding: 20px;
+            }
+            
+            header h1 {
+                font-size: 1.7rem;
+            }
+        }
